@@ -17,7 +17,7 @@ jobs:
       # The @toolbox/widgets dependency is a sibling checkout.
       - name: Fetch widget core
         shell: bash
-        run: git clone "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/28121978444/toolbox-widgets.git" ../toolbox-widgets
+        run: git clone https://github.com/28121978444/toolbox-widgets.git ../toolbox-widgets
 
       - uses: actions/setup-node@v4
         with:
