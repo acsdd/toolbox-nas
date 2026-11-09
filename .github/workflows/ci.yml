@@ -15,10 +15,9 @@ jobs:
       - uses: actions/checkout@v4
 
       # The @toolbox/widgets dependency is a sibling checkout.
-      - uses: actions/checkout@v4
-        with:
-          repository: 28121978444/toolbox-widgets
-          path: ../toolbox-widgets
+      - name: Fetch widget core
+        shell: bash
+        run: git clone "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/28121978444/toolbox-widgets.git" ../toolbox-widgets
 
       - uses: actions/setup-node@v4
         with:
