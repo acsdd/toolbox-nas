@@ -1,0 +1,25 @@
+{
+  "name": "toolbox-nas",
+  "version": "0.1.0",
+  "description": "Local-first NAS companion: serves the shared Toolbox widgets (crypto watch, Gmail announcer, resource monitor) over a web API with the portable widget import/export format.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/index.js",
+    "test": "npm run build && node --test test/",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@toolbox/widgets": "file:../toolbox-widgets",
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}

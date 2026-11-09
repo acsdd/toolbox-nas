@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The @toolbox/widgets dependency is a sibling checkout.
+      - uses: actions/checkout@v4
+        with:
+          repository: 28121978444/toolbox-widgets
+          path: ../toolbox-widgets
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm install
+      - run: npm run typecheck
+      - run: npm test
