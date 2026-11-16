@@ -2,6 +2,8 @@
 
 **Status:** `internal_UAT` — under acceptance testing inside the team. ![status](https://img.shields.io/badge/status-internal_UAT-e8c35c?style=flat-square)
 
+**Site:** <https://acsdd.github.io/toolbox-nas/> — The project landing page.
+
 Local-first NAS companion daemon: serves the shared [Toolbox widgets](https://github.com/acsdd/toolbox-widgets) — **crypto watch**, **Gmail announcer** and **resource monitor** — over a small web API with a single-page dashboard, and speaks the same portable widget bundle format as the other apps.
 
 Part of the Toolbox family:
