@@ -1,14 +1,14 @@
 # toolbox-nas
 
-Local-first NAS companion daemon: serves the shared [Toolbox widgets](https://github.com/28121978444/toolbox-widgets) — **crypto watch**, **Gmail announcer** and **resource monitor** — over a small web API with a single-page dashboard, and speaks the same portable widget bundle format as the other apps.
+Local-first NAS companion daemon: serves the shared [Toolbox widgets](https://github.com/acsdd/toolbox-widgets) — **crypto watch**, **Gmail announcer** and **resource monitor** — over a small web API with a single-page dashboard, and speaks the same portable widget bundle format as the other apps.
 
 Part of the Toolbox family:
 
 | App | Repo |
 | --- | --- |
-| Toolbox (desktop) | [`toolbox-desktop`](https://github.com/28121978444/toolbox-desktop) |
-| MCP server | [`toolbox-mcp`](https://github.com/28121978444/toolbox-mcp) |
-| Shared widget core | [`toolbox-widgets`](https://github.com/28121978444/toolbox-widgets) |
+| Toolbox (desktop) | [`toolbox-desktop`](https://github.com/acsdd/toolbox-desktop) |
+| MCP server | [`toolbox-mcp`](https://github.com/acsdd/toolbox-mcp) |
+| Shared widget core | [`toolbox-widgets`](https://github.com/acsdd/toolbox-widgets) |
 
 ## API
 

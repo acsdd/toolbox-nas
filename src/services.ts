@@ -22,7 +22,7 @@ import {
 } from '@toolbox/widgets'
 import { loadSettings, saveSettings, type StoredSettings } from './config.js'
 
-export const USER_AGENT = 'toolbox-nas/0.1.0 (+https://github.com/28121978444/toolbox-nas)'
+export const USER_AGENT = 'toolbox-nas/0.1.0 (+https://github.com/acsdd/toolbox-nas)'
 
 interface ServicesOptions {
   fetchImpl?: FetchLike

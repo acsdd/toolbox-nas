@@ -19,7 +19,7 @@ jobs:
       # them from the package realpath.
       - name: Fetch widget core
         shell: bash
-        run: git clone https://github.com/28121978444/toolbox-widgets.git ../toolbox-widgets
+        run: git clone https://github.com/acsdd/toolbox-widgets.git ../toolbox-widgets
 
       - name: Install widget core deps
         run: npm install --omit=dev
